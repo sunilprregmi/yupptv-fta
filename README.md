@@ -42,7 +42,7 @@ The following channel categories are available:
 3. **Run the Python script:**
 
    ```bash
-   python scraper.py
+   python playlist.py
    ```
 
    The script will generate an `.m3u8` playlist file that can be opened in VLC or any compatible media player.
