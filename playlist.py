@@ -10,7 +10,7 @@ def create_playlist(url, headers):
         playlist = ""
         for channel in data['response'].get('channels', []):
             if channel.get('streamType') == 'live':
-                stream_url = f"https://relay-in1.spr.com.np/yupptv/{channel['code']}/playlist.m3u8"
+                stream_url = f"https://neptv.guruusr.workers.dev/yupp/{channel['code']}/playlist.m3u8"
                 playlist += f"#EXTINF:-1 tvg-id=\"{channel['code']}\" tvg-name=\"{channel['name']}\" tvg-logo=\"{channel['logo']}\" tvg-language=\"{channel['language']}\" group-title=\"{tab_code}\",{channel['name']}\n{stream_url}\n"
         return playlist
     except Exception as e:
